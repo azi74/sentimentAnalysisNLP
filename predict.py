@@ -25,12 +25,15 @@ def predict(text):
     return model.config.id2label[probs.argmax().item()]
 
 # Gradio interface
+import gradio as gr
+
 iface = gr.Interface(
     fn=predict,
     inputs=gr.Textbox(label="Enter a Malayalam sentence"),
     outputs=gr.Label(label="Predicted Sentiment"),
     title="Malayalam Sentiment Analysis",
-    description="Type a Malayalam sentence and get the sentiment (Positive, Negative, Neutral)."
+    description="Type a Malayalam sentence and get the sentiment (Positive, Negative, Neutral).",
 )
 
 iface.launch()
+
