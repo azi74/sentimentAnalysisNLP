@@ -1,6 +1,0 @@
-malayalam_sentiment_model_gpu/
-sentimentAnalyzerMuRIL.py
-test.py
-requestsToTest.py
-labeledMarked.csv
-generateMalayalamDataset.py
