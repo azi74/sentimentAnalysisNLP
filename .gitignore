@@ -4,3 +4,5 @@ test.py
 requestsToTest.py
 labeledMarked.csv
 generateMalayalamDataset.py
+.gradio/
+generated_dataset.csv
